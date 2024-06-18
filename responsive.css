@@ -1,0 +1,47 @@
+/* Make the website responsive for all types of users! */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #4A90E2;
+        flex-direction: column;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+    }
+}
+@media (min-width: 768px) {
+    .text {
+        font-size: 28px; /* Adjusted font size for medium screens */
+        padding: 18px 24px; /* Adjusted padding for medium screens */
+    }
+}
+@media (min-width: 1200px) {
+    .slideshow-container {
+        max-width: 1200px;
+    }
+    .text {
+        font-size: 32px; /* Adjusted font size for large screens */
+        padding: 20px 30px; /* Adjusted padding for large screens */
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

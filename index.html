@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBA College</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="img/logo.png" alt="College Logo" class="logo" /></a>
+            <span class="college-name">Govt. Khan Bahadur Ahsanullah College</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="Teachers/index-teachers.html">Teachers</a></li>
+            <li><a href="Result/index-result.html">Results</a></li>
+            <li><a href="#about-section" onclick="scrollToSection('about-section')">About</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/slider_1-min.jpg" style="width:100%">
+            <div class="text">Your Bright Future is Our Mission</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slider_2-min.jpg" style="width:100%">
+            <div class="text">Education is Life</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slider_3-min.jpg" style="width:100%">
+            <div class="text">Helping Each of Our Students Fulfill the Potential</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Welcome to Collage of Excellence</h1>
+    </div>
+
+    <!-- About and Stats Section -->
+    <div id="about-section" class="about-stats-container">
+        <div class="about-section">
+            <h2>About Collage</h2>
+            <p>Government X College: A Beacon of Excellence in Education</p>
+            <p>Nestled in the heart of our vibrant city, Government X College stands as a testament to the enduring power of learning and the pursuit of excellence. With its lush, sprawling campus that merges historic charm with modern facilities, this institution is not just a place to study; it's a community where minds are nurtured, spirits are kindled, and futures are forged.
+              
+              At Government X College, education transcends the boundaries of textbooks and classrooms. It is an immersive experience that combines rigorous academic curricula with an array of extracurricular activities, ensuring that every student receives a holistic education. The college boasts an illustrious faculty of renowned scholars and industry experts who are deeply committed to imparting knowledge and igniting curiosity in their students.
+              
+              From state-of-the-art laboratories to extensive libraries, from lively cultural festivals to competitive sports teams, Government X College offers an environment where students can explore their passions and excel in their endeavors. It is a melting pot of cultures and ideas, where diversity is celebrated and every voice is valued.
+              
+              As an alma mater to many distinguished alumni who have left indelible marks in various fields, Government X College continues to inspire new generations to reach for the stars. It is more than just an educational institution; it's a beacon that lights the way for those who dare to dream big and work hard to turn those dreams into reality.
+              
+              Join us at Government X College, where your journey towards a brighter future begins.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="video-section">
+            <video width="100%" controls>
+                <source src="video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+        <div class="stat" data-value="20203">
+            <i class="fas fa-user-graduate"></i>
+            <h3>0</h3>
+            <p>Students Enrolled</p>
+        </div>
+        <div class="stat" data-value="139">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>0</h3>
+            <p>Certified Teachers</p>
+        </div>
+        <div class="stat" data-value="99">
+            <i class="fas fa-university"></i>
+            <h3>0%</</h3>
+            <p>Passing to Universities</p>
+        </div>
+        <div class="stat" data-value="100">
+            <i class="fas fa-smile"></i>
+            <h3>0%</h3>
+            <p>Parents Satisfaction</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About The Collage</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea conseq consectetur hic provident dolor ab aliquam eveniet alias</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="Teachers/index-teachers.html">Teachers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Sakhipur, Satkhira, Khulna</li>
+                    <li><i class="fas fa-envelope"></i> auyonmondol@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +880 1846 255354</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Auyon Mondol Joy and ChatGPT. All Rights Reserved. Designed & Developed with ❤️ by Auyon Mondol Joy.</p>
+            <p><a href="#" id="back-to-top">Back to top ⬆</a></p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
